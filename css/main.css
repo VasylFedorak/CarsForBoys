@@ -522,7 +522,7 @@ body {
 }
 
 .section-color {
-  background-color: #8d8585;
+  background-color: #76c2cc;
 }
 
 .content-section {
@@ -711,7 +711,7 @@ body {
   max-width: 360px;
   height: 300px;
   background-color: darkgreen;
-  background-image: url(../../img/heroImg.jpg);
+  background-image: url(../img/heroImg.jpg);
   background-size: cover;
   background-position: center;
   margin: 0 auto;
