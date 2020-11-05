@@ -10,40 +10,39 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <nav class="main-nav">
-        <div class="header-logo">
-          <a href="">CarsForBoys</a>
+        <div class="mobile__flex">
+          <a href="./index.html" class="main-logo">CarsForBoys</a>
           <button type="button" class="mobile-menu" aria-expanded="false" aria-controls="menu-container"
             data-menu-button>
             <svg width="30" height="30" aria-label="переключатель мобільного меню">
               <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
               <use class="icon-close" href="./img/sprite.svg#icon-close"></use>
-
             </svg>
           </button>
         </div>
 
         <ul class="main-nav__list menu-container" id="menu-container" data-menu>
-          <li>Почати гру</li>
-          <li>Про нашу гру</li>
-          <li>Правила гри</li>
-          <li>Галерея</li>
+          <li class="main-nav__list__item"> <a href="" class="main-nav__list__link">Почати гру</a> </li>
+          <li class="main-nav__list__item"> <a href="#about" class="main-nav__list__link">Про нашу гру</a></li>
+          <li class="main-nav__list__item"> <a href="#rules" class="main-nav__list__link">Правила гри</a></li>
+          <li class="main-nav__list__item"> <a href="#gallery" class="main-nav__list__link">Галерея</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <section class="section-color">
+    <section class="hero-section">
       <div class="container">
-        <h1>CarsForBoys</h1>
-        <button>Почати гру</button>
+        <h1 class="hero-section__title">CarsForBoys</h1>
+        <button class="hero-section__button">Почати гру</button>
       </div>
     </section>
-    <section>
+    <section class="content-section" id="about">
       <div class="container">
-        <h2>Про нашу гру</h2>
+        <h2 class="section-title">Про нашу гру</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
           aperiam veniam obcaecati nisi deleniti! Ea laudantium quidem earum,
@@ -54,9 +53,9 @@
         </p>
       </div>
     </section>
-    <section class="section-color">
+    <section class="content-section section-color" id="rules">
       <div class="container">
-        <h2>Правила гри</h2>
+        <h2 class="section-title">Правила гри</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           Reprehenderit, dolores rerum eius vero est libero. Sed praesentium
@@ -67,13 +66,13 @@
         </p>
       </div>
     </section>
-    <section>
+    <section class="content-section" id="gallery">
       <div class="container">
-        <h2>Галерея</h2>
+        <h2 class="section-title">Галерея</h2>
       </div>
     </section>
   </main>
-  <footer class="section-color">
+  <footer class="footer-section">
     <div class="container">
       <p class="text copy">&copy; 2020 All Rights Reserved.</p>
     </div>
