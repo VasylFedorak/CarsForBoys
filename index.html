@@ -1,83 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CarsForBoys</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CarsForBoys</title>
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet"> -->
-  <link rel="stylesheet" href="./css/main.min.css" />
-</head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="main-nav">
+          <div class="mobile__flex">
+            <a href="./index.html" class="main-logo">CarsForBoys</a>
+            <button
+              type="button"
+              class="mobile-menu"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                width="30"
+                height="30"
+                aria-label="переключатель мобільного меню"
+              >
+                <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
+                <use
+                  class="icon-close"
+                  href="./img/sprite.svg#icon-close"
+                ></use>
+              </svg>
+            </button>
+          </div>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <nav class="main-nav">
-        <div class="mobile__flex">
-          <a href="./index.html" class="main-logo">CarsForBoys</a>
-          <button type="button" class="mobile-menu" aria-expanded="false" aria-controls="menu-container"
-            data-menu-button>
-            <svg width="30" height="30" aria-label="переключатель мобільного меню">
-              <use class="icon-menu" href="./img/sprite.svg#icon-menu"></use>
-              <use class="icon-close" href="./img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+          <ul
+            class="main-nav__list menu-container"
+            id="menu-container"
+            data-menu
+          >
+            <li class="main-nav__list__item">
+              <a href="" class="main-nav__list__link">Почати гру</a>
+            </li>
+            <li class="main-nav__list__item">
+              <a href="#about" class="main-nav__list__link">Про нашу гру</a>
+            </li>
+            <li class="main-nav__list__item">
+              <a href="#rules" class="main-nav__list__link">Правила гри</a>
+            </li>
+            <li class="main-nav__list__item">
+              <a href="#gallery" class="main-nav__list__link">Галерея</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-section__title">CarsForBoys</h1>
+          <button class="hero-section__button">Почати гру</button>
         </div>
-
-        <ul class="main-nav__list menu-container" id="menu-container" data-menu>
-          <li class="main-nav__list__item"> <a href="" class="main-nav__list__link">Почати гру</a> </li>
-          <li class="main-nav__list__item"> <a href="#about" class="main-nav__list__link">Про нашу гру</a></li>
-          <li class="main-nav__list__item"> <a href="#rules" class="main-nav__list__link">Правила гри</a></li>
-          <li class="main-nav__list__item"> <a href="#gallery" class="main-nav__list__link">Галерея</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="hero-section">
+      </section>
+      <section class="content-section" id="about">
+        <div class="container">
+          <h2 class="section-title">Про нашу гру</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+            aperiam veniam obcaecati nisi deleniti! Ea laudantium quidem earum,
+            pariatur perspiciatis corporis laborum cum tenetur beatae provident
+            aliquid accusamus explicabo, tempora expedita quaerat labore
+            dolorem, eligendi illo maiores voluptatum ducimus iste ex eius.
+            Officiis possimus ratione velit nesciunt, fugiat quia quibusdam!
+          </p>
+        </div>
+      </section>
+      <section class="content-section section-color" id="rules">
+        <div class="container">
+          <h2 class="section-title">Правила гри</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, dolores rerum eius vero est libero. Sed praesentium
+            aliquam harum adipisci! Suscipit cupiditate similique, explicabo ad
+            itaque, hic maxime, dicta id vero adipisci fugiat magnam voluptatem
+            omnis dolorum qui veritatis accusamus ex inventore architecto?
+            Nihil, eos. Tempora perspiciatis ut iure omnis?
+          </p>
+        </div>
+      </section>
+      <section class="content-section" id="gallery">
+        <div class="container">
+          <h2 class="section-title">Галерея</h2>
+          <ul class="content-section__list">
+            <li class="content-section__item">
+              <img
+                src="./img/mainPage/470191-min.jpg"
+                class="content-section__img"
+                alt=""
+              />
+            </li>
+            <li class="content-section__item">
+              <img
+                src="./img/mainPage/1196811-min.jpg"
+                class="content-section__img"
+                alt=""
+              />
+            </li>
+            <li class="content-section__item">
+              <img
+                src="./img/mainPage/1196994-min.jpg"
+                class="content-section__img"
+                alt=""
+              />
+            </li>
+            <li class="content-section__item">
+              <img
+                src="./img/mainPage/1197462-min.jpg"
+                class="content-section__img"
+                alt=""
+              />
+            </li>
+            <li class="content-section__item">
+              <img
+                src="./img/mainPage/1196557-min.jpg"
+                class="content-section__img"
+                alt=""
+              />
+            </li>
+            <li class="content-section__item">
+              <img
+                src="./img/mainPage/909218-min.jpg"
+                class="content-section__img"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-section">
       <div class="container">
-        <h1 class="hero-section__title">CarsForBoys</h1>
-        <button class="hero-section__button">Почати гру</button>
+        <p class="text copy">&copy; 2020 All Rights Reserved.</p>
       </div>
-    </section>
-    <section class="content-section" id="about">
-      <div class="container">
-        <h2 class="section-title">Про нашу гру</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-          aperiam veniam obcaecati nisi deleniti! Ea laudantium quidem earum,
-          pariatur perspiciatis corporis laborum cum tenetur beatae provident
-          aliquid accusamus explicabo, tempora expedita quaerat labore
-          dolorem, eligendi illo maiores voluptatum ducimus iste ex eius.
-          Officiis possimus ratione velit nesciunt, fugiat quia quibusdam!
-        </p>
-      </div>
-    </section>
-    <section class="content-section section-color" id="rules">
-      <div class="container">
-        <h2 class="section-title">Правила гри</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Reprehenderit, dolores rerum eius vero est libero. Sed praesentium
-          aliquam harum adipisci! Suscipit cupiditate similique, explicabo ad
-          itaque, hic maxime, dicta id vero adipisci fugiat magnam voluptatem
-          omnis dolorum qui veritatis accusamus ex inventore architecto?
-          Nihil, eos. Tempora perspiciatis ut iure omnis?
-        </p>
-      </div>
-    </section>
-    <section class="content-section" id="gallery">
-      <div class="container">
-        <h2 class="section-title">Галерея</h2>
-      </div>
-    </section>
-  </main>
-  <footer class="footer-section">
-    <div class="container">
-      <p class="text copy">&copy; 2020 All Rights Reserved.</p>
-    </div>
-  </footer>
-  <script src="./JS/menu.js"></script>
-</body>
-
+    </footer>
+    <script src="./JS/menu.js"></script>
+  </body>
 </html>
