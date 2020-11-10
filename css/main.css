@@ -567,13 +567,28 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #238e9c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .header {
-    height: 80px;
+    height: 70px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 90px;
   }
 }
 
@@ -598,6 +613,14 @@ body {
 @media screen and (min-width: 768px) {
   .main-logo {
     font-size: 32px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-logo {
+    font-size: 34px;
+    margin-right: 60px;
   }
 }
 
@@ -638,8 +661,8 @@ body {
     width: 100%;
     z-index: 100;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 40px 30px;
+    line-height: 1.8;
     background: #a09595;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -654,12 +677,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -675,12 +698,12 @@ body {
 
 @media screen and (min-width: 1200px) {
   .main-nav__list__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 40px;
   }
 }
 
 .main-nav__list__item {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: darkgray;
 }
@@ -694,6 +717,16 @@ body {
 @media screen and (min-width: 768px) {
   .main-nav__list__item {
     font-size: 18px;
+    width: calc((100% - 3 *40px)/4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -705,6 +738,16 @@ body {
 
 .main-nav__list__link {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .hero-section {
@@ -813,6 +856,14 @@ body {
   .content-section__item:not(:last-child) {
     margin-bottom: 10px;
   }
+}
+
+.content-section__text {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.68;
+  text-align: center;
+  color: #1F1F1D;
 }
 
 .footer-section {
